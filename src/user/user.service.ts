@@ -17,45 +17,7 @@ export class UserService {
 
   public _softDelete = () => true;
 
-  public _fillables = () => [
-    'role',
-    'name',
-    'store_name',
-    'address',
-    'title',
-    'bio',
-    'email',
-    'username',
-    'image_url',
-    'cover_image',
-    'mobile_no',
-    'dob',
-    'age',
-    'verified',
-    'address',
-    'city',
-    'country',
-    'currency',
-    'vat',
-    'vat_percentage',
-    'gender',
-    'driving_license',
-    'trade_license',
-    'platform',
-    'platform_id',
-    'emirates_id',
-    'country_code',
-    'country_name',
-    'date_of_birth',
-    'online_status',
-    'payment_active',
-    'has_password',
-    'email_verified',
-    'phone_verified',
-    'completion_rate',
-    'slug',
-    'created_at',
-  ];
+  public _fillables = () => ['email'];
 
   async create(body: CreateUserDto) {
     await this._beforeRegister(body);

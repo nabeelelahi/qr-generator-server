@@ -6,10 +6,8 @@ import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   const config = new DocumentBuilder()
-    .setTitle('Ahsan E-commerce Platform API')
-    .setDescription(
-      'This is the api documentation of Ahsan E-commerce Platform API',
-    )
+    .setTitle('QR Code Generator API')
+    .setDescription('This is the api documentation of QR Code Generator')
     .addBearerAuth(
       {
         type: 'http',
